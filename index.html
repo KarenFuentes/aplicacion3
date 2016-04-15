@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  p {
+	  color:#FFF
+  }
+ .lista {
+	 text-align:justify;
+	 
+ }
+ .fondo{
+	 background-image:url(imagenes/fondo.png);
+	 
+ }
+ ul h2 {
+	 text-align:center;
+ }
+</style>
+
+<title>Tercera Aplicación	</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/20160404_152904.jpg','imagenes/pascua.jpg','imagenes/reciclado.png','imagenes/contaminacion.jpg','imagenes/3.png','imagenes/imagen principal.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1 style=" font-size:28px;"><i><center>La Contaminación </center></i></h1>
+    <div>
+      
+
+    </div>
+  </div>
+      <div data-role="main" class="ui-content"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/contaminacion.jpg',1)"><img src="imagenes/Actua!.jpg" width="100%" height="50%" id="Image21"></a>
+        
+  </div>
+          
+<div>
+    <ul id="lista" data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2 style=" font-family:Georgia, 'Times New Roman', Times, serif;">¿Qué es la Contaminacion?</h2>
+      </a>
+    </li>
+    
+    <li class="ui-first-child ui-last-child">
+         <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2 style=" font-family:Georgia, 'Times New Roman', Times, serif;">Causas de la Contaminación</h2>
+         </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2 style=" font-family:Georgia, 'Times New Roman', Times, serif;">Consecuencias de la Contaminación</h2>
+         </a>
+    </li> 
+    <li class="ui-first-child ui-last-child">
+         <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2 style=" font-family:Georgia, 'Times New Roman', Times, serif;">Medidas preventivas</h2>
+         </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2 style=" font-family:Georgia, 'Times New Roman', Times, serif;">Contaminación en mi comunidad</h2>
+         </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2 style=" font-family:Georgia, 'Times New Roman', Times, serif;">Causas y consecuencias de la contaminacion en mi colonia.</h2>
+         </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+         <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2 style=" font-family:Georgia, 'Times New Roman', Times, serif;">¿Cómo solucionar estos problemas?</h2>
+         </a>
+    </li>   
+    </ul>
+</div>
+
+<div class="fondo">
+<!-- Start WOWSlider.com -->
+<iframe src="visor/wowslider.html" style="width:640px;height:350px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+       <img src="imagenes/peque1.jpg" width="46" height="46">
+   </div>
+   <div>
+      <h4>Aplicacion Tres.</h4>
+      <h4>Karen Arely Fuentes</h4>
+   </div>
+</div>
+
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1 style="font-size:25px;">¿Qué es la Contaminación?</h1>
+   </div>
+   <div data-role="content" align="center" >
+   
+    <div>
+       <p>
+          La Contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal.
+Esta degradación del medio ambiente por un contaminante externo puede provocar daños en la vida cotidiana del ser humano y alterar las condiciones de supervivencia de la flora y la fauna.
+Alrededor de 2 millones de personas podrían morir cada año por alguna causa atribuible a la contaminación atmosférica, asegura la Organización Mundial de la Salud. Según este estudio la mayor cantidad de muertes se producen en los países en desarrollo donde se concentran  altas densidades de partículas nocivas para la salud.
+La población humana crece según una progresión geométrica y la demanda de alimentos y necesidades básicas para la vida del hombre son cada vez mayores. El aumento en el consumo de diversos productos y desechos, provocados por  el ser humano, trae como consecuencia la generación de sustancias tóxicas.
+
+
+ <div>
+       <img src="imagenes/contaminacion1.jpg" width="45%" height="45%" style="border-radius:15px;">
+       
+       <img src="imagenes/contaminacion.2.jpg" width="45%" height="45%" style="border-radius:15px">
+       
+      </div>
+     </div>
+   </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <center><img src="imagenes/peque1.jpg" width="46" height="46"></center>
+   </div>
+      <h4>Karen Arely Fuentes Martínez</h4>
+   </div>
+   
+ </div> 
+     
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1 style="font-size:25px;">Causas de la Contaminación</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <p>
+       <div data-role="collapsible" data-theme="a">
+       <h2>Te puede interesar.</h2>
+         Nuestro planeta se encuentra expuesto a numerosos contaminantes que perjudican al bienestar y a la salud de los seres vivos que habitan en él.
+Los contaminantes son sustancias, químicas o biológicas, en forma de energía térmica, radiaciones o ruido que se adhieren o entran en contacto con el aire, el suelo o el agua afectando a su composición y causando daños en el medio en que habitan animales, vegetales y el hombre.
+</div>
+
+Las principales causas de la contaminación son:
+<div class="lista">
+•  El tráfico rodado: los coches y camiones son los mayores contaminantes urbanos porque a diario circulan arrojando al aire gases tóxicos perjudiciales para la salud. Estos vehículos contaminan a causa de la combustión de los hidrocarburos que utilizan para moverse, y el desgaste de los frenos y  ruedas.<br>
+
+•   En las ciudades existe otra fuente de contaminación como son las construcciones y las demoliciones: estas actividades desprenden polvos y gases que dañan el aire de la zona en que se desarrollan,  y  a su vez contaminan el agua donde arrojan sus desechos.<br>
+
+•   Los Combustibles fósiles: el confort  y el bienestar de los habitantes de las grandes ciudades trajo como consecuencia el aumento en el consumo de combustibles fósiles. La producción de carbón, de petróleo y de gas natural crece de la mano del ascenso de los niveles de contaminación del aire, del suelo y del agua del planeta.<br>
+
+•  El índice de población mundial ha crecido a distinto ritmo que la tasa de mortalidad, hecho que ha impactado sobre el medioambiente: provocando la ineficiencia en el tratamiento de las aguas residuales domésticas, el aumento del consumo irreflexivo  y la generación de toneladas de basura.<br>
+
+•   El progreso tecnológico beneficia a nivel económico y social,  pero la proliferación de industrias y la falta de control ambiental en sus procesos, ha perjudicado el ecosistema por la gran cantidad de residuos arrojados al aire, en ríos y mares.<br>
+
+•   La deforestación: la tala indiscriminada en bosques y selvas impide que los árboles, encargados de purificar el aire, realicen esta tarea y que miles de animales y plantas se extingan por no tener un lugar donde vivir y crecer.<br>
+
+•   Los pesticidas y los productos químicos utilizados en los cultivos llegan a  contaminar el suelo y el agua de la zona en que se sembró. Llegando incluso a contaminar, de forma alarmante, a muchos alimentos.
+</div>
+
+       </p>
+       
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <center><img src="imagenes/peque1.jpg" width="46" height="46"></center>
+   </div>
+      <h4>Karen Arely Fuentes Martínez</h4>
+  </div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1 style="font-size:25px;">Consecuencias de la Contaminación</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <p>
+         Problemas para la salud: la contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida.
+Debilitamiento de la capa de ozono: la capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa. la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta. Esto no solo hace que cada vez haya más zonas desiertas en las que es imposible vivir, sino que también hace que el hielo en los polos se deshaga y mueran muchas especies por ello. No hace falta mencionar que esto hace subir indudablemente el nivel del mar y que, de seguir así, muchas ciudades costeras se verán arrasadas, quedándose sin playas y sin zona costera.<div><img src="imagenes/2.jpg" width="35%" height="35%" style="border-radius:50%; "></div>
+
+       </p>
+       
+       
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <center><img src="imagenes/peque1.jpg" width="46" height="46"></center>
+   </div>
+      <h4>Karen Arely Fuentes Martínez</h4>
+  </div>
+</div>
+</div>                                                        
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1 style="font-size:25px;">Medidas preventivas</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <p>
+       <ul class="lista">
+       <p>
+         La prevención de la contaminación o control de entrada de contaminación, es una solución de producción, que reduce o elimina la producción de contaminantes, a menudo cambiando compuestos químicos o utilizando procesos menos perjudiciales. 
+
+La contaminación se puede evitar (o por lo menos reducir) con la cuatro “erres” de la utilización de recursos: 
+
+       </p><br>
+<ul>
+         <li>Reducir</li>
+         <li>Reutilizar</li>
+         <li>Reciclar </li>
+        
+</ul>
+
+
+       </p>
+<div data-role="collapsible"  align="center" style="width:100%;">
+          <h1>Otras Medidas de prevención.</h1>
+         <p>Caminar  o maneja bicicleta siempre que sea posible. Una de las mejores cosas que puedes hacer para ayudar a detener la contaminación es dejar de utilizar tu auto para realizar viajes cortos. Si el clima es agradable y no tienes que desplazarte una distancia muy larga, considera la posibilidad de caminar o ir en bicicleta. Con esto ayudarás a reducir la contaminación del aire, y al mismo tiempo harás ejercicio y obtendrás aire fresco.
+         <div><img src="imagenes/7.jpg" width="40%" height="40%>" style="border-radius:25px;"></div>
+</p>
+      </div>
+    </div>
+  </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <center><img src="imagenes/peque1.jpg" width="46" height="46"></center>
+   </div>
+      <h4>Karen Arely Fuentes Martínez</h4>
+  </div>
+</div>
+</div>                                                         
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1 style="font-size:25px;">Problemas en mi comunidad</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <p>
+         El municipio de Atlixco presenta niveles preocupantes, principalmente en lo relacionado al suelo, afirmó el regidor de seguridad pública y gobernanza, Jorge Moya Hernández.
+         Durante una entrevista, luego de presentar ante el Cabildo la propuesta para integrar el Atlas Municipal de Riesgos (AMR), añadió que lo anterior es producto de la mala organización de una ciudad que genera excedentes de desechos sólidos y líquidos.
+Y no sólo eso, expuso, esta basura termina mal vertida en áreas o zonas inadecuadas afectando directa e indirectamente los asentamientos humanos que padecen, por ejemplo,  contaminación atmosférica, del agua, del suelo y hasta de alimentos.
+El regidor destacó que el municipio cuenta con redes de drenaje y alcantarillado sólo en los principales poblados, y el resto tiene redes y fosas sépticas. “Esto no implica que se cuente con la infraestructura y el servicio de drenaje y alcantarillado en buenas condiciones en todos los casos, el problema es que los desechos son vertidos a las cañadas para contaminar  los principales ríos, contribuyendo al problema ambiental referido, y que de paso constituye un foco potencial de riesgo a la salud.
+<div>
+<img src="imagenes/atlixco.jpg" width="350" height="150">
+<img src="imagenes/atlixco2.jpg" width="350" height="150">
+<img src="imagenes/atlixco3.jpg" width="350" height="150">
+   </div>
+       </p>
+       <div data-role="collapsible"  align="center" style="width:100%;">
+          <h1>Más...</h1>
+         <p>El CO2 es un problema grave ya que afecta el aire y tarde o temprano se volvera demaciado tóxico.</p>
+         <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/3.png',1)"><img src="imagenes/1.jpg" width="25%" height="25%" id="Image19"></a>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <center><img src="imagenes/peque1.jpg" width="46" height="46"></center>
+   </div>
+      <h4>Karen Arely Fuentes Martínez</h4>
+  </div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1 style="font-size:25px;">Causas y consecuencias de la contaminacion en mi comunidad.</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <p>
+         En donde yo vivo, como ya lo hemos mencionado, existen problemas en el suelo, y no solo eso, tambien en el aire y en el agua, es importante saber observar que a donde quiera que vallamos hay contaminación.
+La gente de hoy en dia esta tan acostumbrada a ver el suelo sucio, o a respirar siempre el humo de los carros, que no se da cuenta que es un daño al planeta.
+Por lo tanto la gente no hace nada, y eso provoca que el aumente de basura en la calle se produsca, es decir, las mismas personas tienen la culpa, y despues los que pagan son los ecosistemas.... o zonas protegidas, santuarios, rios, lagos, manantiales, etc.
+
+<div> 
+   <img src="imagenes/cambio-climatico-espana.jpg" width="40%" height="40%" style="border-radius:30%;">
+   <img src="imagenes/contaminacion6.jpg" width="40%" height="40%" style="border-radius:30%;">
+</div>
+       </p>
+       
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <center><img src="imagenes/peque1.jpg" width="46" height="46"></center>
+   </div>
+      <h4> Karen Arely Fuentes Martínez</h4>
+  </div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1 style="font-size:25px;">¿Cómo solucionar los problemas?</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <p>
+         Se podrian hacer campañas de recoleccion de basura en las calles, o en zonas naturales, ademas de reforestación en ciertas partes del área, e invitar a la mayoria de genete posible para que nos apoye en la realización de una especie de proyecto para mejorar la comunidad.
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/imagen principal.jpg',1)"><img src="imagenes/5.jpg" width="35%" height="35%" id="Image17"></a><br>
+
+</div>
+
+<div>
+</div>
+       
+       
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <center><img src="imagenes/peque1.jpg" width="46" height="46"></center>
+   </div>
+      <h4> Karen Arely Fuentes Martínez</h4>
+  </div>
+</div>
+</div>
+
+
+</div> 
+   </div>
+</div>
+</body>
+</html>
